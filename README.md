@@ -11,11 +11,6 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173).
 
-## Deploy (GitHub Pages)
+## Deploy (Vercel)
 
-1. **Enable GitHub Pages:** In your repo go to **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. Each push to `main` will build and deploy. The site will be at:
-   **https://saldrao-77.github.io/3-2-claude-code-proj/**
-
-Builds run from `.github/workflows/deploy.yml`.
+With Vercel connected to this GitHub repo, pushes to `main` auto-deploy. Vercel detects the Vite app and uses `npm run build`; the app is served from the `dist` output.
